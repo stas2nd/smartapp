@@ -40,23 +40,27 @@ html(class="no-js", lang="ru")
                     +benefit("img-benefit.jpg", "Benefit Title Here", "Inteligula congue id elis donec sce sagittis intes id laoreet aenean. Massawisicondisse leo sem ac.")
                 section.content__slider.slider.col-12(id="slider" class="carousel slide" data-ride="carousel")
                     .slider__inner.carousel-inner
-                        .slider__item.carousel-item.active.w-100
-                            h1.slider__title SUBSCRIBE
-                            p.slider__desc Don’t Miss Our Latest Offers & Promotions
-                            form.slider__form.form
-                                input.form__input(placeholder="Enter Your Email Here")
-                                button.form__button(type="submit") SIGN UP
-                        .slider__item.carousel-item.w-100
-                            h1.slider__title SUBSCRIBE
-                            p.slider__desc Don’t Miss Our Latest Offers & Promotions
-                            form.slider__form.form
-                                input.form__input(placeholder="Enter Your Email Here")
-                                button.form__button(type="submit") SIGN UP
-                    a.carousel-control-prev(href="#slider" role="button" data-slide="prev")
-                        span.carousel-control-prev-icon(aria-hidden="true")
+                        .slider__item.carousel-item.active
+                            .slider__wrapper.row.justify-content-between.align-items-center
+                                .slider__text.col-6
+                                    h1.slider__title SUBSCRIBE
+                                    p.slider__desc Don’t Miss Our Latest Offers & Promotions
+                                form.slider__form.form.col-6
+                                    input.form__input(placeholder="Enter Your Email Here")
+                                    button.form__button(type="submit") SIGN UP
+                        .slider__item.carousel-item
+                            .slider__wrapper.row.justify-content-between.align-items-center
+                                .slider__text.col-6
+                                    h1.slider__title SUBSCRIBE
+                                    p.slider__desc Don’t Miss Our Latest Offers & Promotions
+                                form.slider__form.form.col-6
+                                    input.form__input(placeholder="Enter Your Email Here")
+                                    button.form__button(type="submit") SIGN UP
+                    a.slider__link.carousel-control-prev(href="#slider" role="button" data-slide="prev")
+                        span.slider__icon.slider__icon_prev.carousel-control-prev-icon(aria-hidden="true")
                         span.sr-only Previous
-                    a.carousel-control-next(href="#slider" role="button" data-slide="next")
-                        span.carousel-control-next-icon(aria-hidden="true")
+                    a.slider__link.carousel-control-next(href="#slider" role="button" data-slide="next")
+                        span.slider__icon.slider__icon_next.carousel-control-next-icon(aria-hidden="true")
                         span.sr-only Next
 
         +footer()

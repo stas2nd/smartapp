@@ -1,5 +1,5 @@
 mixin benefit(imgSrc, title, desc)
-    .benefit.benefits__item.col-6
-        img.benefit__image(src="../static/img/general/" + imgSrc)
-        h1.benefit__title= title
-        p.benefit__desc= desc
+    .benefit.benefits__item.col-auto.row
+        img.benefit__image.col-auto(src="../static/img/general/" + imgSrc)
+        h1.benefit__title.col= title
+        p.benefit__desc.col-12= desc

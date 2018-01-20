@@ -6,6 +6,9 @@ html, body {
 
 body {
 
+    font-family: "Georgia", serif;
+    font-size: 13px;
+    font-weight: normal;
     color: white;
 
     background-color: @back-color;
@@ -16,7 +19,87 @@ img {
     height: auto;
 }
 
-.pd-0() {
-    padding: 0;
+
+
+.container-fluid {
+    width: @content;
+    padding: 0 @paddings;
+}
+
+.content {
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 25px;
+}
+
+.slider {
+    position: relative;
+
+    width: 800px;
     margin: 0;
+    padding: 25px 60px;
+
+    color: @grey;
+}
+
+.slider::before,
+.slider::after {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-image: linear-gradient(to right, transparent 0%, #d4d4d4 25%, #d4d4d4 75%, transparent 100%);
+}
+
+.slider::before {
+    top: 0;
+}
+
+.slider::after {
+    bottom: 0;
+}
+
+.slider__title {
+    .pd-0;
+    margin: 0;
+
+    text-align: center;
+    font-size: 36px;
+    line-height: 43.2px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.slider__desc {
+    .pd-0;
+    margin: 0;
+
+    text-align: center;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.slider__form {
+    margin: 0;
+}
+
+.slider__link {
+    width: 60px;
+}
+
+.slider__icon {
+    width: 34px;
+    height: 62px;
+}
+
+.slider__icon_prev {
+    background-image: url("__static__general/l-arrow-hover.png");
+}
+
+.slider__icon_next {
+    background-image: url("__static__general/r-arrow-hover.png");
 }
