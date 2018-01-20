@@ -2,24 +2,67 @@ doctype html
 html(class="no-js", lang="ru")
 
     include ../components/head/head.pug
-    include ../components/example/example.pug
+    include ../components/header/header.pug
+    include ../components/header/header.pug
+    include ../components/feature/feature.pug
+    include ../components/benefit/benefit.pug
     include ../components/footer/footer.pug
 
     head
         +head(head.defaults)
-    body.page
-        |%=symbols=%
+    body
+        +header()
+        main.main.container-fluid
+            section.main__promo.promo.row.justify-content-between
+                .promo__intro.col
+                    h1.promo__title Cursus penati saccum.
+                    p.promo__desc
+                        | This is a W3C standards compliant free PSD website template from OS Templates. This template is distributed using a Website Template Licence. For more free PSD templates visit
+                        a.promo__desc_link(href="OS-Templates.com") OS-Templates.com
+                    a.promo__link(href="#") NOW AVAILABLE IN THE APP STORE
+                .promo__image.col-auto
+                    img.promo__img(src="../static/img/content/promo.png" width=388 height=426 alt="Phone and Tablet")
 
-        section.page__wrapper
+            section.main__content.content.row
+                section.content__features.features.col-6.row
+                    +feature("FEATURE 1", "Justoid nonummy laoreet phasellent penatoque in ")
+                    +feature("FEATURE 2", "Justoid nonummy laoreet phasellent penatoque in ")
+                    +feature("FEATURE 3", "Justoid nonummy laoreet phasellent penatoque in ")
+                    +feature("FEATURE 4", "Justoid nonummy laoreet phasellent penatoque in ")
+                section.content__benefits.benefits.col-6.row
+                    +benefit("img-benefit.jpg", "Benefit Title Here", "Inteligula congue id elis donec sce sagittis intes id laoreet aenean. Massawisicondisse leo sem ac.")
+                    +benefit("img-benefit.jpg", "Benefit Title Here", "Inteligula congue id elis donec sce sagittis intes id laoreet aenean. Massawisicondisse leo sem ac.")
+                    +benefit("img-benefit.jpg", "Benefit Title Here", "Inteligula congue id elis donec sce sagittis intes id laoreet aenean. Massawisicondisse leo sem ac.")
+                    +benefit("img-benefit.jpg", "Benefit Title Here", "Inteligula congue id elis donec sce sagittis intes id laoreet aenean. Massawisicondisse leo sem ac.")
+                    +benefit("img-benefit.jpg", "Benefit Title Here", "Inteligula congue id elis donec sce sagittis intes id laoreet aenean. Massawisicondisse leo sem ac.")
+                    +benefit("img-benefit.jpg", "Benefit Title Here", "Inteligula congue id elis donec sce sagittis intes id laoreet aenean. Massawisicondisse leo sem ac.")
+                    +benefit("img-benefit.jpg", "Benefit Title Here", "Inteligula congue id elis donec sce sagittis intes id laoreet aenean. Massawisicondisse leo sem ac.")
+                    +benefit("img-benefit.jpg", "Benefit Title Here", "Inteligula congue id elis donec sce sagittis intes id laoreet aenean. Massawisicondisse leo sem ac.")
+                section.content__slider.slider.col-12(id="slider" class="carousel slide" data-ride="carousel")
+                    .slider__inner.carousel-inner
+                        .slider__item.carousel-item.active.w-100
+                            h1.slider__title SUBSCRIBE
+                            p.slider__desc Don’t Miss Our Latest Offers & Promotions
+                            form.slider__form.form
+                                input.form__input(placeholder="Enter Your Email Here")
+                                button.form__button(type="submit") SIGN UP
+                        .slider__item.carousel-item.w-100
+                            h1.slider__title SUBSCRIBE
+                            p.slider__desc Don’t Miss Our Latest Offers & Promotions
+                            form.slider__form.form
+                                input.form__input(placeholder="Enter Your Email Here")
+                                button.form__button(type="submit") SIGN UP
+                    a.carousel-control-prev(href="#slider" role="button" data-slide="prev")
+                        span.carousel-control-prev-icon(aria-hidden="true")
+                        span.sr-only Previous
+                    a.carousel-control-next(href="#slider" role="button" data-slide="next")
+                        span.carousel-control-next-icon(aria-hidden="true")
+                        span.sr-only Next
 
-            //- Include your components here
-            +example()
+        +footer()
 
-            .page__buffer
-
-        .page__footer
-            +footer()
-
+        script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
         script svg4everybody();
 
