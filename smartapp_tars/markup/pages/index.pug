@@ -18,8 +18,11 @@ html(class="no-js", lang="ru")
                     h1.promo__title Cursus penati saccum.
                     p.promo__desc
                         | This is a W3C standards compliant free PSD website template from OS Templates. This template is distributed using a Website Template Licence. For more free PSD templates visit
-                        a.promo__desc_link(href="OS-Templates.com") OS-Templates.com
-                    a.promo__link(href="#") NOW AVAILABLE IN THE APP STORE
+                        a.promo__desc_link(href="http://OS-Templates.com") OS-Templates.com
+                    a.promo__link.btn.btn-secondary.btn-lg.active(href="#" role="button" aria-pressed="true")
+                        | NOW AVAILABLE IN
+                        br
+                        | THE APP STORE
                 .promo__image.col-auto
                     img.promo__img(src="../static/img/content/promo.png" width=388 height=426 alt="Phone and Tablet")
 
@@ -66,6 +69,7 @@ html(class="no-js", lang="ru")
         +footer()
 
         script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
         script svg4everybody();

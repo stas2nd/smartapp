@@ -19,18 +19,79 @@ img {
     height: auto;
 }
 
-
-
 .container-fluid {
     width: @content;
     padding: 0 @paddings;
 }
 
+.main__promo {
+    margin-top: 19px;
+}
+
+.promo__intro {
+    padding-right: 0;
+}
+
+.promo__title {
+    margin-top: 169px;
+
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: normal;
+}
+
+.promo__desc {
+    font-size: 16px;
+    line-height: 25.6px;
+    font-weight: normal;
+}
+
+.promo__desc_link {
+    padding-left: 5px;
+
+    color: @feature;
+}
+
+a.promo__desc_link:hover,
+a.promo__desc_link:focus {
+    color: @feature ;
+}
+
+.promo__image {
+    padding-left: 0;
+}
+
+a.promo__link {
+    width: 305px;
+    height: 76px;
+    padding-left: 40px;
+    padding-right: 0px;
+    padding-top: 12px;
+
+    font-size: 22px;
+    line-height: 26.4px;
+    font-weight: normal;
+
+    background-color: #10131b !important;
+    background-image: url("__static__general/phone.png") !important;
+    background-repeat: no-repeat;
+    background-position: 20px;
+}
+
 .content {
-    padding: 20px;
+    padding: 40px 20px;
+    margin: 0;
 
     background-color: white;
     border-radius: 25px;
+}
+
+.content__features {
+    .pd-0;
+}
+
+.content__benefits {
+    .pd-0;
 }
 
 .slider {
@@ -38,6 +99,7 @@ img {
 
     width: 800px;
     margin: 0;
+    margin-top: 15px;
     padding: 25px 60px;
 
     color: @grey;
@@ -84,7 +146,7 @@ img {
 }
 
 .slider__form {
-    margin: 0;
+    .pd-0;
 }
 
 .slider__link {

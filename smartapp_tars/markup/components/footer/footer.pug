@@ -1,28 +1,29 @@
 mixin footer()
     footer.footer.container-fluid
         .footer__info.info.row
-            .info__blog.blog.col-3
+            .info__blog.blog.col-auto
                 h1.info__title FROM THE BLOG
                 .blog__post.post
                     h2.post__title Blog Post Title
                     span.post__author Posted by Admin on
                     span.post__date 00.00.0000
                     p.post__desc Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. Namjusto cras urna urnaretra lor urna neque sed quis orci nulla. Laoremut vitae doloreet.
-                    a.post__link(href="#") Read More »
+                    .post__link_wrapper
+                        a.post__link(href="#") Read More »
             .info__links.links.col-3
                 h1.info__title QUICK LINKS
-                ul.links__list
-                    li.links__item
+                ul.links__list.list-group.list-group-flush
+                    li.links__item.list-group-item
                         a.links__link(href="#") Link Text Here
-                    li.links__item
+                    li.links__item.list-group-item
                         a.links__link(href="#") Link Text Here
-                    li.links__item
+                    li.links__item.list-group-item
                         a.links__link(href="#") Link Text Here
-                    li.links__item
+                    li.links__item.list-group-item
                         a.links__link(href="#") Link Text Here
-                    li.links__item
+                    li.links__item.list-group-item
                         a.links__link(href="#") Link Text Here
-                    li.links__item
+                    li.links__item.list-group-item
                         a.links__link(href="#") Link Text Here
             .info__contacts.contacts.col-3
                 h1.info__title CONTACT US
@@ -48,15 +49,15 @@ mixin footer()
                     | contact@mydomain.com
             .info__social.social.col-3
                 h1.info__title SOCIALISE
-                ul.social__list
-                    li.social__item
+                ul.social__list.list-group-flush
+                    li.social__item.list-group-item
                         a.social__link(href="#") Facebook
-                    li.social__item
+                    li.social__item.list-group-item
                         a.social__link(href="#") Twitter
-                    li.social__item
+                    li.social__item.list-group-item
                         a.social__link(href="#") Photos on Flickr
-                    li.social__item
+                    li.social__item.list-group-item
                         a.social__link(href="#") RSS Feed
-        .footer__copyright.copyright.col-12.row.justify-content-between
+        .footer__copyright.copyright.col-12.row.justify-content-between.align-items-center
             p.copyright__rights.col-auto Copyright © 2013 Domain Name - All Rights Reserved
             p.copyright__by.col-auto Template by OS Templates
