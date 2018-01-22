@@ -1,7 +1,7 @@
 mixin footer()
     footer.footer.container-fluid
         .footer__info.info.row
-            .info__blog.blog.col-md-3.col-lg-auto.col-xl-auto
+            .info__blog.blog.col-sm-6.col-md-3.col-lg-auto.col-xl-auto
                 h1.info__title FROM THE BLOG
                 .blog__post.post
                     h2.post__title Blog Post Title
@@ -10,8 +10,8 @@ mixin footer()
                     p.post__desc Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. Namjusto cras urna urnaretra lor urna neque sed quis orci nulla. Laoremut vitae doloreet.
                     .post__link_wrapper
                         a.post__link(href="#") Read More »
-            .info__links.links.col-md-3.col-lg-3.col-xl-3
-                h1.info__title QUICK LINKS
+            .info__links.links.col-sm-6.col-md-3.col-lg-3.col-xl-3
+                h1.info__title.info__title_links QUICK LINKS
                 ul.links__list.list-group.list-group-flush
                     li.links__item.list-group-item
                         a.links__link(href="#") Link Text Here
@@ -25,7 +25,7 @@ mixin footer()
                         a.links__link(href="#") Link Text Here
                     li.links__item.list-group-item
                         a.links__link(href="#") Link Text Here
-            .info__contacts.contacts.col-md-3.col-lg-3.col-xl-3
+            .info__contacts.contacts.col-sm-6.col-md-3.col-lg-3.col-xl-3
                 h1.info__title CONTACT US
                 p.contacts__address
                     | Company Name
@@ -47,8 +47,8 @@ mixin footer()
                     | Email:
                     br
                     | contact@mydomain.com
-            .info__social.social.col-md-3.col-lg-3.col-xl-3
-                h1.info__title SOCIALISE
+            .info__social.social.col-sm-6.col-md-3.col-lg-3.col-xl-3
+                h1.info__title.info__title_social SOCIALISE
                 ul.social__list.list-group-flush
                     li.social__item.list-group-item
                         a.social__link(href="#") Facebook
@@ -58,6 +58,6 @@ mixin footer()
                         a.social__link(href="#") Photos on Flickr
                     li.social__item.list-group-item
                         a.social__link(href="#") RSS Feed
-        .footer__copyright.copyright.col-md-12.col-lg-12.col-xl-12.row.justify-content-between.align-items-center
-            p.copyright__rights.col-md-auto.col-lg-auto.col-xl-auto Copyright © 2013 Domain Name - All Rights Reserved
-            p.copyright__by.col-md-auto.col-lg-auto.col-xl-auto Template by OS Templates
+        .footer__copyright.copyright.col-sm-12.col-md-12.col-lg-12.col-xl-12.row.justify-content-between.align-items-center
+            p.copyright__rights.col-sm-auto.col-md-auto.col-lg-auto.col-xl-auto Copyright © 2013 Domain Name - All Rights Reserved
+            p.copyright__by.col-sm-auto.col-md-auto.col-lg-auto.col-xl-auto Template by OS Templates

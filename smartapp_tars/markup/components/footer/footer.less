@@ -12,8 +12,13 @@
     width: 225px;
 
     margin-right: 10px;
+    margin-bottom: 25px;
 
     @media screen and (min-width: 768px) and (max-width: 991.98px) {
+        margin-right: 0px;
+    }
+
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
         margin-right: 0px;
     }
 }
@@ -63,9 +68,21 @@ a.post__link:focus {
 
 .info__links {
     margin-right: 10px;
+    margin-bottom: 25px;
 
     @media screen and (min-width: 768px) and (max-width: 991.98px) {
         margin-right: 0px;
+    }
+
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+        padding-right: 25px;
+        margin-right: 0px;
+    }
+}
+
+.info__title_links {
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+        margin-bottom: 18px;
     }
 }
 
@@ -88,6 +105,8 @@ a.post__link:focus {
 }
 
 .info__contacts {
+    margin-bottom: 25px;
+
     font-size: 12px;
     line-height: 15.6px;
 }
@@ -96,6 +115,19 @@ a.post__link:focus {
     padding-left: 20px;
     padding-right: 0;
     margin-left: -20px;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+        padding: 0 15px;
+        padding-right: 25px;
+        margin-left: 0px;
+    }
+}
+
+.info__title_social {
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+        margin-bottom: 20px;
+    }
 }
 
 .social__list {
@@ -146,7 +178,6 @@ a.post__link:focus {
     height: 52px;
     padding: 0;
     margin-left: 0;
-    margin-top: 25px;
 
     border-top: 1px solid rgba(255, 255, 255, 0.1);;
 }
