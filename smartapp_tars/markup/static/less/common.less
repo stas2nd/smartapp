@@ -22,6 +22,11 @@ img {
 .container-fluid {
     width: @content;
     padding: 0 @paddings;
+
+    @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+        width: @content-lg;
+        padding: 0 @paddings;
+    }
 }
 
 .main__promo {
@@ -39,6 +44,11 @@ img {
     font-size: 56px;
     line-height: 56px;
     font-weight: normal;
+
+    @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+        margin-top: 109px;
+    }
+
 }
 
 .promo__desc {

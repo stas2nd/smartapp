@@ -14,7 +14,7 @@ html(class="no-js", lang="ru")
         +header()
         main.main.container-fluid
             section.main__promo.promo.row.justify-content-between
-                .promo__intro.col
+                .promo__intro.col-lg.col-xl
                     h1.promo__title Cursus penati saccum.
                     p.promo__desc
                         | This is a W3C standards compliant free PSD website template from OS Templates. This template is distributed using a Website Template Licence. For more free PSD templates visit
@@ -23,16 +23,16 @@ html(class="no-js", lang="ru")
                         | NOW AVAILABLE IN
                         br
                         | THE APP STORE
-                .promo__image.col-auto
+                .promo__image.col-lg-auto.col-xl-auto
                     img.promo__img(src="../static/img/content/promo.png" width=388 height=426 alt="Phone and Tablet")
 
             section.main__content.content.row
-                section.content__features.features.col-6.row
+                section.content__features.features.col-lg-6.col-xl-6.row
                     +feature("FEATURE 1", "Justoid nonummy laoreet phasellent penatoque in ")
                     +feature("FEATURE 2", "Justoid nonummy laoreet phasellent penatoque in ")
                     +feature("FEATURE 3", "Justoid nonummy laoreet phasellent penatoque in ")
                     +feature("FEATURE 4", "Justoid nonummy laoreet phasellent penatoque in ")
-                section.content__benefits.benefits.col-6.row
+                section.content__benefits.benefits.col-lg-6.col-xl-6.row
                     +benefit("img-benefit.jpg", "Benefit Title Here", "Inteligula congue id elis donec sce sagittis intes id laoreet aenean. Massawisicondisse leo sem ac.")
                     +benefit("img-benefit.jpg", "Benefit Title Here", "Inteligula congue id elis donec sce sagittis intes id laoreet aenean. Massawisicondisse leo sem ac.")
                     +benefit("img-benefit.jpg", "Benefit Title Here", "Inteligula congue id elis donec sce sagittis intes id laoreet aenean. Massawisicondisse leo sem ac.")
@@ -41,29 +41,29 @@ html(class="no-js", lang="ru")
                     +benefit("img-benefit.jpg", "Benefit Title Here", "Inteligula congue id elis donec sce sagittis intes id laoreet aenean. Massawisicondisse leo sem ac.")
                     +benefit("img-benefit.jpg", "Benefit Title Here", "Inteligula congue id elis donec sce sagittis intes id laoreet aenean. Massawisicondisse leo sem ac.")
                     +benefit("img-benefit.jpg", "Benefit Title Here", "Inteligula congue id elis donec sce sagittis intes id laoreet aenean. Massawisicondisse leo sem ac.")
-                section.content__slider.slider.col-12(id="slider" class="carousel slide" data-ride="carousel")
+                section.content__slider.slider.col-lg-12.col-xl-12(id="slider" class="carousel slide" data-ride="carousel")
                     .slider__inner.carousel-inner
                         .slider__item.carousel-item.active
                             .slider__wrapper.row.justify-content-between.align-items-center
-                                .slider__text.col-6
+                                .slider__text.col-lg-6.col-xl-6
                                     h1.slider__title SUBSCRIBE
                                     p.slider__desc Don’t Miss Our Latest Offers & Promotions
-                                form.slider__form.form.col-6.form-row.align-items-center
-                                    .col-8
+                                form.slider__form.form.col-lg-6.col-xl-6.form-row.align-items-center
+                                    .col-lg-8.col-xl-8
                                         label.form__label.visually-hidden(for="form__input1") Your Email
                                         input.form__input.form-control(type="email" id="form__input1" placeholder="Enter Your Email Here" aria-describedby="emailHelp")
-                                    .col-auto
+                                    .col-lg-auto.col-xl-auto
                                         button.form__button.btn.btn-primary(type="submit") SIGN UP
                         .slider__item.carousel-item
                             .slider__wrapper.row.justify-content-between.align-items-center
-                                .slider__text.col-6
+                                .slider__text.col-lg-6.col-xl-6
                                     h1.slider__title SUBSCRIBE
                                     p.slider__desc Don’t Miss Our Latest Offers & Promotions
-                                form.slider__form.form.col-6.form-row.align-items-center
-                                    .col-8
+                                form.slider__form.form.col-lg-6.col-xl-6.form-row.align-items-center
+                                    .col-lg-8.col-xl-8
                                         label.form__label.visually-hidden(for="form__input2") Your Email
                                         input.form__input.form-control(type="email" id="form__input2" placeholder="Enter Your Email Here" aria-describedby="emailHelp")
-                                    .col-auto
+                                    .col-lg-auto.col-xl-auto
                                         button.form__button.btn.btn-primary(type="submit") SIGN UP
                     a.slider__link.carousel-control-prev(href="#slider" role="button" data-slide="prev")
                         span.slider__icon.slider__icon_prev.carousel-control-prev-icon(aria-hidden="true")
