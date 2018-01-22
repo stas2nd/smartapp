@@ -48,17 +48,23 @@ html(class="no-js", lang="ru")
                                 .slider__text.col-6
                                     h1.slider__title SUBSCRIBE
                                     p.slider__desc Don’t Miss Our Latest Offers & Promotions
-                                form.slider__form.form.col-6
-                                    input.form__input(placeholder="Enter Your Email Here")
-                                    button.form__button(type="submit") SIGN UP
+                                form.slider__form.form.col-6.form-row.align-items-center
+                                    .col-8
+                                        label.form__label.visually-hidden(for="form__input1") Your Email
+                                        input.form__input.form-control(type="email" id="form__input1" placeholder="Enter Your Email Here" aria-describedby="emailHelp")
+                                    .col-auto
+                                        button.form__button.btn.btn-primary(type="submit") SIGN UP
                         .slider__item.carousel-item
                             .slider__wrapper.row.justify-content-between.align-items-center
                                 .slider__text.col-6
                                     h1.slider__title SUBSCRIBE
                                     p.slider__desc Don’t Miss Our Latest Offers & Promotions
-                                form.slider__form.form.col-6
-                                    input.form__input(placeholder="Enter Your Email Here")
-                                    button.form__button(type="submit") SIGN UP
+                                form.slider__form.form.col-6.form-row.align-items-center
+                                    .col-8
+                                        label.form__label.visually-hidden(for="form__input2") Your Email
+                                        input.form__input.form-control(type="email" id="form__input2" placeholder="Enter Your Email Here" aria-describedby="emailHelp")
+                                    .col-auto
+                                        button.form__button.btn.btn-primary(type="submit") SIGN UP
                     a.slider__link.carousel-control-prev(href="#slider" role="button" data-slide="prev")
                         span.slider__icon.slider__icon_prev.carousel-control-prev-icon(aria-hidden="true")
                         span.sr-only Previous

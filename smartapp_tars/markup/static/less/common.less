@@ -26,6 +26,7 @@ img {
 
 .main__promo {
     margin-top: 19px;
+    margin-bottom: 45px;
 }
 
 .promo__intro {
@@ -92,6 +93,7 @@ a.promo__link {
 
 .content__benefits {
     .pd-0;
+    padding-top: 10px;
 }
 
 .slider {
@@ -149,6 +151,56 @@ a.promo__link {
     .pd-0;
 }
 
+.form__input {
+    background-image: linear-gradient(to bottom, white 0%, #d9d9d9 100%);
+}
+
+.form__input:hover {
+    background-image: linear-gradient(to bottom, white 0%, #e7e6e6 100%);
+    border-color: #ced4da;
+}
+
+.form__input:focus {
+    border-color: #ced4da;
+    background-image: none;
+    background-color: white;
+
+    box-shadow: 0 0 0 0.2rem #ced4da;
+}
+
+.form__button {
+    color: @feature;
+
+    background-image: linear-gradient(to bottom, white 0%, #d9d9d9 100%);
+    border-color: #ced4da;
+}
+
+.form__button:hover {
+    color: @feature;
+
+    background-image: linear-gradient(to bottom, white 0%, #b6b3b3 100%);
+    border-color: #ced4da;
+}
+
+.form__button:focus {
+    color: @feature;
+
+    background-image: linear-gradient(to bottom, white 0%, #b6b3b3 100%);
+    border-color: #ced4da;
+
+    box-shadow: 0 0 0 0.2rem #ced4da;
+}
+
+ .btn-primary:not(:disabled):not(.disabled):active,
+ .btn-primary:not(:disabled):not(.disabled):active:focus {
+    color: @feature;
+
+     background-color: transparent;
+    background-image: linear-gradient(to bottom, white 0%, #b6b3b3 100%);
+    border-color: #ced4da;
+    box-shadow: 0 0 0 0.2rem #ced4da;
+}
+
 .slider__link {
     width: 60px;
 }
@@ -164,4 +216,24 @@ a.promo__link {
 
 .slider__icon_next {
     background-image: url("__static__general/r-arrow-hover.png");
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    -webkit-clip-path: inset(100%);
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
