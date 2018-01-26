@@ -998,6 +998,16 @@ a.post__link:focus {
   position: relative;
   min-height: 118px;
 }
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .header__navigation {
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .header__navigation {
+    margin-right: 0;
+  }
+}
 .header__navigation::after {
   position: absolute;
   content: "";
@@ -1064,7 +1074,8 @@ a.post__link:focus {
 }
 @media screen and (max-width: 575.98px) {
   .main-navigation__img-link {
-    width: 240px;
+    width: 225px;
+    padding-left: 0;
   }
 }
 .main-navigation__img {
